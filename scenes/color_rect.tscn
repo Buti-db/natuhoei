@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d0s71wgg3j4np"]
+
+[ext_resource type="Shader" uid="uid://b1uva0mx7r8nd" path="res://new_shader.gdshader" id="1_qbjnn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qbjnn"]
+shader = ExtResource("1_qbjnn")
+
+[node name="Dopa" type="ColorRect" unique_id=359252664]
+material = SubResource("ShaderMaterial_qbjnn")
+anchors_preset = -1
+anchor_right = 0.026
+offset_left = 186.0
+offset_top = 89.0
+offset_right = 277.048
+offset_bottom = 221.0

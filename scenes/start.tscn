@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cdfqpfr3hsfoc"]
+
+[ext_resource type="Texture2D" uid="uid://lmiex6xwm7qw" path="res://bakemono/デフォルト　ホラーver.png" id="1_jaeev"]
+[ext_resource type="FontFile" uid="uid://ccuh2hu2i4okv" path="res://fonts/k8x12_ttf_2021-05-05/k8x12L.ttf" id="2_u80x2"]
+[ext_resource type="PackedScene" uid="uid://d0s71wgg3j4np" path="res://scenes/color_rect.tscn" id="3_bodal"]
+
+[node name="Start" type="Control" unique_id=1574460336]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=442422118]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.059125952, 0.059125945, 0.059125938, 1)
+
+[node name="デフォルトホラーver" type="Sprite2D" parent="." unique_id=582744667]
+position = Vector2(810.81256, 409.6875)
+scale = Vector2(12.6725, 12.092499)
+texture = ExtResource("1_jaeev")
+
+[node name="Label" type="Label" parent="." unique_id=1078707147]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -294.0
+offset_right = 325.0
+offset_bottom = 123.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0, 0.13725491, 1)
+theme_override_fonts/font = ExtResource("2_u80x2")
+theme_override_font_sizes/font_size = 100
+text = "ドパガキ化回避ゲーム"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=2070973384]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 55.0
+offset_top = 258.0
+offset_right = 359.0
+offset_bottom = 362.0
+theme_override_fonts/font = ExtResource("2_u80x2")
+theme_override_font_sizes/font_size = 50
+text = "スタート"
+
+[node name="Dopa" parent="." unique_id=359252664 instance=ExtResource("3_bodal")]
+layout_mode = 1
+offset_left = 744.0
+offset_top = 245.0
+offset_right = 733.048
+offset_bottom = 279.0
+
+[node name="Dopa2" parent="." unique_id=637050325 instance=ExtResource("3_bodal")]
+layout_mode = 1
+offset_left = 847.0
+offset_top = 245.0
+offset_right = 836.048
+offset_bottom = 278.0
